@@ -117,7 +117,12 @@
       let rowHtml = '';
       for (let col = 0; col < cells.length; col++) {
         const cell = cells[col] === '.' ? '' : cells[col];
-        // alert(cells[col]);
+        // if (cells[col] === '.') {
+        //   const cell = '';
+        // } else {
+        //   const cell = cells[col];
+        // }
+
         rowHtml += `<td>${cell}</td>`;
       }
       /** Is the purpose of this nested For loop to draw each element of each row?
